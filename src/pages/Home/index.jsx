@@ -16,7 +16,7 @@ const index = () => {
     return (
         <div>
             <HeaderTyper
-                className={style.HeaderTyper}
+                className={'Text'}
                 words={toTypeWords}
                 delay={5000}
                 defaultText={toTypeWords[0] || 'Aurora'}

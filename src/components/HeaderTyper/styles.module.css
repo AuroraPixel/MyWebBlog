@@ -1,21 +1,35 @@
 .Container {
   display: flex;
-  flex-direction: row;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: center;
+  align-items: center;
   height: 5rem;
 }
 
+
 .Text {
-  color: var(--ifm-navbar-link-color);
+  color: rgba(255, 255, 255, 0.932);
   font-size: var(--ifm-font-size-64);
   font-weight: bold;
 }
 
-.Cursor {
-  background-color: var(--ifm-navbar-link-active-color);
+[data-theme='dark'] .Text {
+  color: #0e0d0dbe;
+  font-size: var(--ifm-font-size-64);
+  font-weight: bold;
+}
+
+[data-theme='dark'] .Cursor {
+  background-color: black;
   margin-left: 10px;
-  margin-top: 10px;
+
+  width: 0.6rem;
+  height: 4rem;
+}
+
+.Cursor {
+  background-color: rgba(255, 255, 255, 0.932);
+  margin-left: 10px;
 
   width: 0.6rem;
   height: 4rem;
