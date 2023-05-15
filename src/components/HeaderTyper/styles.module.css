@@ -8,7 +8,7 @@
 
 
 .Text {
-  color: rgba(255, 255, 255, 0.932);
+  color: var(--ifm-heading-color);
   font-size: var(--ifm-font-size-64);
   font-weight: bold;
 }
@@ -28,11 +28,11 @@
 }
 
 .Cursor {
-  background-color: rgba(255, 255, 255, 0.932);
+  background-color:  black;
   margin-left: 10px;
 
-  width: 0.6rem;
-  height: 4rem;
+  width: 0.2rem;
+  height: 2rem;
 }
 
 .Cursor_Blink {
@@ -57,7 +57,7 @@
     background: transparent;
   }
   50% {
-    background: var(--ifm-navbar-link-active-color);
+    background: black;
   }
   100% {
     background: transparent;
@@ -78,5 +78,6 @@
     width: 0.3rem;
     margin-left: 5px;
     margin-top: 5px;
+    background-color:  black;
   }
 }
