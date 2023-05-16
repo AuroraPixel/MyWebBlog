@@ -4,6 +4,12 @@
  * work well for content-centric websites.
  */
 
+
+ @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@100;200;300;400;500;600;700;800;900&display=swap');
+ html{
+  font-family: 'Noto Sans Mono', monospace;
+ }
+
 /* You can override the default Infima variables here. */
 :root {
   --ifm-color-primary: #2e8555;

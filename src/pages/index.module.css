@@ -3,6 +3,7 @@
  * and scoped locally.
  */
 
+
 .heroBanner {
   padding: 4rem 0;
   text-align: center;
@@ -29,6 +30,7 @@
   background-clip: text;
   -webkit-text-fill-color: transparent;
   animation: animatedText 6s linear infinite;
+  font-family: 'Noto Sans Mono', monospace;
 }
 
 @keyframes animatedText {
@@ -39,10 +41,4 @@
   100% {
     background-position: 0 0;
   }
-}
-
-img {
-  border: 1px solid #fff; /* 设置边框为白色 */
-  background-color: #fff; /* 设置背景颜色为白色 */
-  mix-blend-mode: screen; /* 设置混合模式为screen */
 }
