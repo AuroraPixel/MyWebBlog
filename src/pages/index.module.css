@@ -5,10 +5,56 @@
 
 
 .heroBanner {
-  padding: 4rem 0;
-  text-align: center;
   position: relative;
   overflow: hidden;
+}
+
+.row_1{
+  display: flex;
+  margin: 0 auto;
+  padding: 5rem 0 5rem;
+  transition: padding .1s cubic-bezier(.17,.67,.83,.67);
+  width: 95%;
+}
+
+.container_left{
+  margin-left: 5%;
+  width: 55%;
+  height: 100vh;
+}
+
+.title {
+  white-space: nowrap;
+  font-size: 4rem;
+}
+
+.title .first{
+  background: linear-gradient(59deg,#000000,#03e1ff,#1de840,#dc1fff,#03e1ff,#ffffff);
+  background-size: 1000% 1000%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: animatedText 6s linear infinite;
+  font-size: 120%;
+}
+
+.title .second{
+  padding-top: 2rem;
+  padding-left:14rem;
+}
+
+.signature{
+  padding-top:1rem;
+  color: #817f7f;
+}
+
+.container_right{
+  width: 50%;
+  height: 100vh;
+}
+
+.HeroImg{
+  width: 75vh;
 }
 
 @media screen and (max-width: 996px) {
@@ -23,16 +69,6 @@
   justify-content: center;
 }
 
-.title {
-  background: linear-gradient(59deg,#000000,#03e1ff,#1de840,#dc1fff,#03e1ff,#ffffff);
-  background-size: 1000% 1000%;
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-  animation: animatedText 6s linear infinite;
-  font-family: 'Noto Sans Mono', monospace;
-}
-
 @keyframes animatedText {
   0% {
     background-position: 100% 100%;
@@ -41,4 +77,24 @@
   100% {
     background-position: 0 0;
   }
+}
+
+.my_image_container {
+  position: relative;
+  display: inline-block;
+}
+
+.my_image_container:hover .overlay {
+  opacity: 0;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.5);
+  opacity: 1;
+  transition: opacity 0.3s ease-in-out;
 }

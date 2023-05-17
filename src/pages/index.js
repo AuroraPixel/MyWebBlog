@@ -1,46 +1,29 @@
-import React, { useState, useRef, useEffect  } from 'react';
+import React, { useState,useEffect } from 'react';
+import clsx from 'clsx';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Layout from '@theme/Layout';
-import HeaderTyper from '../components/HeaderTyper';
-import { shuffle } from '../utils'
-import image from '../../static/img/1.png';
-import styles from './index.module.css';
-
-function HomepageHeader() {
-  const [toTypeWords] = useState(
-    shuffle([
-      'Email:wanghanlinlin@126.com',
-      'QQ:894606483',
-      'WeiChat:wang894606483',
-      'AuroraPiexl',
-    ])
-  );
-  return (
-    <header className={styles.heroBanner}>
-      <div>
-        <div>
-        <h1 style={{ fontSize: '300%' }}>
-          <div className={styles.title} style={{ fontSize: '150%' }}>
-            Hello!
-          </div>
-          Welcome Here.
-        </h1>
-        </div>
-        <div>
-          <img src={image} alt='HeroImg'/>
-        </div>
+// import HeaderTyper from '../components/HeaderTyper';
+// import { shuffle } from '../utils'
+// import image from '@site/static/img/1.png';
+// import styles from './index.module.css';
+import HomepageHeader from '../components/HomepageHeader'
 
 
-        <p className="hero__subtitle"><HeaderTyper
-          className='Text'
-          words={toTypeWords}
-          delay={5000}
-          defaultText={toTypeWords[0] || 'Aurora'}
-        /></p>
-      </div>
-    </header>
-  );
-}
+// //图片磨砂效果
+// function Image({ src, alt }) {
+//   const [isHovered, setIsHovered] = useState(false);
+
+//   return (
+//     <div
+//       className={clsx(styles.my_image_container, { [styles.hover]: isHovered })}
+//       onMouseEnter={() => setIsHovered(true)}
+//       onMouseLeave={() => setIsHovered(false)}
+//     >
+//       <img src={src} alt={alt} />
+//       <div className={styles.overlay}></div>
+//     </div>
+//   );
+// }
 
 export default function Home() {
   const { siteConfig } = useDocusaurusContext();
