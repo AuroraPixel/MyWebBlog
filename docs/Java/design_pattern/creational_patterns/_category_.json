@@ -1,0 +1,8 @@
+{
+  "label": "CreationalPatterns",
+  "position": 1,
+  "link": {
+    "type": "generated-index",
+    "description": "创建型模式."
+  }
+}
