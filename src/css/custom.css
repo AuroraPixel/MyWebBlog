@@ -27,3 +27,15 @@
   --ifm-color-primary-lightest: #4fddbf;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }
+
+.markdown eg{
+  color: #b9b1b1;
+}
+
+.markdown special{
+  color: #369c64;
+}
+
+.markdown a{
+  color: #aaabeb;
+}
